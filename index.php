@@ -71,100 +71,73 @@ $APPLICATION->SetTitle("Мебельная компания");
 );?>
  </section>
 <!--// ab --> <!-- /services --> <section class="services py-md-5 py-4" id="services">
-<div class="container">
-	<div class="inner-sec-w3ls py-md-5 py-4">
-		<h4 class="sub-tittle-w3 text-uppercase text-center">My Services</h4>
-		<h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3 text-center text-white">What i do</h3>
-		<div class="price-right">
-			<div class="tabs">
-				<ul class="nav nav-pills my-md-5 my-3 justify-content-center" id="pills-tab" role="tablist">
-					<li class="nav-item"> <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Service 1</a> </li>
-					<li class="nav-item"> <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Service 2</a> </li>
-				</ul>
-				<div class="tab-content" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-						<div class="menu-grids mt-4">
-							<div class="row t-in">
-								<div class="col-lg-4 service-in text-center" data-aos="flip-up">
-									<div class="card">
-										<div class="card-body">
- <i class="fas fa-list-ul mb-4"></i>
-											<h5 class="card-title text-uppercase">Professional Code</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 service-in text-center" data-aos="flip-up">
-									<div class="card">
-										<div class="card-body">
- <i class="far fa-lightbulb mb-4"></i>
-											<h5 class="card-title text-uppercase">Creative Ideas</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 service-in text-center" data-aos="flip-up">
-									<div class="card">
-										<div class="card-body">
- <i class="far fa-clone mb-4"></i>
-											<h5 class="card-title text-uppercase">SEO &amp; Marketing</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-						<div class="menu-grids mt-4">
-							<div class="row t-in">
-								<div class="col-lg-4 service-in text-center">
-									<div class="card">
-										<div class="card-body">
- <i class="far fa-heart mb-4"></i>
-											<h5 class="card-title">User Friendly</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 service-in text-center">
-									<div class="card">
-										<div class="card-body">
- <i class="fas fa-magic mb-4"></i>
-											<h5 class="card-title">Web Development</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 service-in text-center">
-									<div class="card">
-										<div class="card-body">
- <i class="fas fa-sliders-h mb-4"></i>
-											<h5 class="card-title">Portfolio Options</h5>
-											<p class="card-text">
-												 Lorem ipsum dolor sit amet consectetur elit,Adipisicing elit tempor.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:news.list",
+        "skill_list",
+        array(
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "AJAX_MODE" => "N",
+            "AJAX_OPTION_ADDITIONAL" => "",
+            "AJAX_OPTION_HISTORY" => "N",
+            "AJAX_OPTION_JUMP" => "N",
+            "AJAX_OPTION_STYLE" => "Y",
+            "CACHE_FILTER" => "N",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "CHECK_DATES" => "Y",
+            "DETAIL_URL" => "",
+            "DISPLAY_BOTTOM_PAGER" => "Y",
+            "DISPLAY_DATE" => "Y",
+            "DISPLAY_NAME" => "Y",
+            "DISPLAY_PICTURE" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "DISPLAY_TOP_PAGER" => "N",
+            "FIELD_CODE" => array(
+                0 => "",
+                1 => "",
+            ),
+            "FILTER_NAME" => "",
+            "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+            "IBLOCK_ID" => "7",
+            "IBLOCK_TYPE" => "OLEE",
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+            "INCLUDE_SUBSECTIONS" => "Y",
+            "MESSAGE_404" => "",
+            "NEWS_COUNT" => "20",
+            "PAGER_BASE_LINK_ENABLE" => "N",
+            "PAGER_DESC_NUMBERING" => "N",
+            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+            "PAGER_SHOW_ALL" => "N",
+            "PAGER_SHOW_ALWAYS" => "N",
+            "PAGER_TEMPLATE" => ".default",
+            "PAGER_TITLE" => "Новости",
+            "PARENT_SECTION" => "",
+            "PARENT_SECTION_CODE" => "",
+            "PREVIEW_TRUNCATE_LEN" => "",
+            "PROPERTY_CODE" => array(
+                0 => "LABEL",
+                1 => "SECTION",
+                2 => "",
+            ),
+            "SET_BROWSER_TITLE" => "Y",
+            "SET_LAST_MODIFIED" => "N",
+            "SET_META_DESCRIPTION" => "Y",
+            "SET_META_KEYWORDS" => "Y",
+            "SET_STATUS_404" => "N",
+            "SET_TITLE" => "Y",
+            "SHOW_404" => "N",
+            "SORT_BY1" => "ACTIVE_FROM",
+            "SORT_BY2" => "SORT",
+            "SORT_ORDER1" => "DESC",
+            "SORT_ORDER2" => "ASC",
+            "STRICT_SECTION_CHECK" => "N",
+            "COMPONENT_TEMPLATE" => "skill_list"
+        ),
+        false
+    );?>
  </section>
 <!-- //services --> <!-- /experience --> <section class="experience py-lg-5 py-4" id="experience">
 <div class="timeline py-lg-5 py-3">
