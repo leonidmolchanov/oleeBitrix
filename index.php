@@ -1,65 +1,59 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
-?>
-
-
-
-
-
-    <section class="banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
+?><section class="banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
 <div class="container">
 	<div class="inner-sec-w3ls py-lg-5 py-4">
-		<div class="info-about text-center">
-			<h4 class="sub-tittle-w3">About Me</h4>
-			<h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3">Welcome to My website</h3>
-			<div class="row mt-lg-5 mt-3">
-				<div class="col-lg-4 progress-info-content text-left">
-					<div class="progress-one my-lg-5" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">Web Design</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-					</div>
-					<div class="progress-one" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">Branding</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-							</div>
+		<h4 class="sub-tittle-w3"><br>
+ </h4>
+		<h4 class="sub-tittle-w3">About Me</h4>
+		<h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3">Welcome to My website</h3>
+		<div class="row mt-lg-5 mt-3">
+			<div class="col-lg-4 progress-info-content text-left">
+				<div class="progress-one my-lg-5" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">Web Design</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 progress-info-content text-left">
-					<div class="progress-one my-lg-5" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">PHP Development</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-					</div>
-					<div class="progress-one" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">Marketing</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-							</div>
+				<div class="progress-one" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">Branding</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 progress-info-content text-left">
-					<div class="progress-one my-lg-5" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">Photography</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-							</div>
+			</div>
+			<div class="col-lg-4 progress-info-content text-left">
+				<div class="progress-one my-lg-5" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">PHP Development</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
-					<div class="progress-one" data-aos="fade-up">
-						<h4 class="progress-tittle-w3">
-						SEO</h4>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-							</div>
+				</div>
+				<div class="progress-one" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">Marketing</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 progress-info-content text-left">
+				<div class="progress-one my-lg-5" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">Photography</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+				</div>
+				<div class="progress-one" data-aos="fade-up">
+					<h4 class="progress-tittle-w3">
+					SEO</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
 				</div>
@@ -173,110 +167,68 @@ $APPLICATION->SetTitle("Мебельная компания");
 </div>
  </section>
 <!-- //experience --> <!--gallery  --> <section class="gallery py-md-5 py-3" id="projects">
-<div class="gallery-inner container py-md-5 pb-3">
-	<h4 class="sub-tittle-w3 text-uppercase text-center">View all</h4>
-	<h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3 text-center">My Projects</h3>
-	<div class="row">
-		<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
-			<div class="section_1_gallery_grid">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g1.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g1.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g2.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g2.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g3.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g3.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-		</div>
-		<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
-			<div class="section_1_gallery_grid">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g4.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g4.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g5.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g5.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g6.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g6.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-		</div>
-		<div class="col-md-4 proj_gallery_grid" data-aos="zoom-in">
-			<div class="section_1_gallery_grid">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g7.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g7.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g8.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g8.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-			<div class="section_1_gallery_grid" data-aos="zoom-in">
- <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="images/g9.jpg">
-				<div class="section_1_gallery_grid1">
- <img alt=" " src="/local/templates/OLEE/images/g9.jpg" class="img-fluid">
-					<div class="proj_gallery_grid1_pos">
-						<h3>Recognize</h3>
-					</div>
-				</div>
- </a>
-			</div>
-		</div>
-		 <!--end portfolio-area -->
-	</div>
-	 <!-- //gallery container -->
-</div>
+
+    <?$APPLICATION->IncludeComponent("bitrix:news.list", "project_list", Array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+        "ADD_SECTIONS_CHAIN" => "Y",	// Включать раздел в цепочку навигации
+        "AJAX_MODE" => "N",	// Включить режим AJAX
+        "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+        "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+        "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+        "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+        "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+        "CACHE_GROUPS" => "Y",	// Учитывать права доступа
+        "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+        "CACHE_TYPE" => "A",	// Тип кеширования
+        "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+        "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+        "DISPLAY_BOTTOM_PAGER" => "Y",	// Выводить под списком
+        "DISPLAY_DATE" => "Y",	// Выводить дату элемента
+        "DISPLAY_NAME" => "Y",	// Выводить название элемента
+        "DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
+        "DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
+        "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+        "FIELD_CODE" => array(	// Поля
+            0 => "",
+            1 => "",
+        ),
+        "FILTER_NAME" => "",	// Фильтр
+        "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+        "IBLOCK_ID" => "5",	// Код информационного блока
+        "IBLOCK_TYPE" => "OLEE",	// Тип информационного блока (используется только для проверки)
+        "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",	// Включать инфоблок в цепочку навигации
+        "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
+        "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
+        "NEWS_COUNT" => "20",	// Количество новостей на странице
+        "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
+        "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+        "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+        "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+        "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+        "PAGER_TITLE" => "Новости",	// Название категорий
+        "PARENT_SECTION" => "",	// ID раздела
+        "PARENT_SECTION_CODE" => "",	// Код раздела
+        "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+        "PROPERTY_CODE" => array(	// Свойства
+            0 => "",
+            1 => "",
+        ),
+        "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
+        "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
+        "SET_META_DESCRIPTION" => "Y",	// Устанавливать описание страницы
+        "SET_META_KEYWORDS" => "Y",	// Устанавливать ключевые слова страницы
+        "SET_STATUS_404" => "N",	// Устанавливать статус 404
+        "SET_TITLE" => "Y",	// Устанавливать заголовок страницы
+        "SHOW_404" => "N",	// Показ специальной страницы
+        "SORT_BY1" => "ACTIVE_FROM",	// Поле для первой сортировки новостей
+        "SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
+        "SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
+        "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
+        "STRICT_SECTION_CHECK" => "N",	// Строгая проверка раздела для показа списка
+    ),
+        false
+    );?>
  </section>
 <!-- //gallery --> <!--/stats--> <section class="stats py-lg-5 py-4" id="stats">
 <div class="gallery-inner container py-md-5 py-4">
