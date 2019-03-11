@@ -2,65 +2,73 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Мебельная компания");
 ?><section class="banner-bottom-wthree py-lg-5 py-md-5 py-4" id="about">
-<div class="container">
-	<div class="inner-sec-w3ls py-lg-5 py-4">
-		<h4 class="sub-tittle-w3"><br>
- </h4>
-		<h4 class="sub-tittle-w3">About Me</h4>
-		<h3 class="tittle-w3 text-uppercase mb-lg-5 mb-3">Welcome to My website</h3>
-		<div class="row mt-lg-5 mt-3">
-			<div class="col-lg-4 progress-info-content text-left">
-				<div class="progress-one my-lg-5" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">Web Design</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-				<div class="progress-one" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">Branding</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 progress-info-content text-left">
-				<div class="progress-one my-lg-5" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">PHP Development</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-				<div class="progress-one" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">Marketing</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 progress-info-content text-left">
-				<div class="progress-one my-lg-5" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">Photography</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-				<div class="progress-one" data-aos="fade-up">
-					<h4 class="progress-tittle-w3">
-					SEO</h4>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
+<?$APPLICATION->IncludeComponent(
+    "bitrix:news.list",
+    "feature_list",
+    array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+        "ADD_SECTIONS_CHAIN" => "Y",
+        "AJAX_MODE" => "N",
+        "AJAX_OPTION_ADDITIONAL" => "",
+        "AJAX_OPTION_HISTORY" => "N",
+        "AJAX_OPTION_JUMP" => "N",
+        "AJAX_OPTION_STYLE" => "Y",
+        "CACHE_FILTER" => "N",
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHECK_DATES" => "Y",
+        "DETAIL_URL" => "",
+        "DISPLAY_BOTTOM_PAGER" => "Y",
+        "DISPLAY_DATE" => "Y",
+        "DISPLAY_NAME" => "Y",
+        "DISPLAY_PICTURE" => "Y",
+        "DISPLAY_PREVIEW_TEXT" => "Y",
+        "DISPLAY_TOP_PAGER" => "N",
+        "FIELD_CODE" => array(
+            0 => "",
+            1 => "",
+        ),
+        "FILTER_NAME" => "",
+        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+        "IBLOCK_ID" => "6",
+        "IBLOCK_TYPE" => "OLEE",
+        "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+        "INCLUDE_SUBSECTIONS" => "Y",
+        "MESSAGE_404" => "",
+        "NEWS_COUNT" => "20",
+        "PAGER_BASE_LINK_ENABLE" => "N",
+        "PAGER_DESC_NUMBERING" => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+        "PAGER_SHOW_ALL" => "N",
+        "PAGER_SHOW_ALWAYS" => "N",
+        "PAGER_TEMPLATE" => ".default",
+        "PAGER_TITLE" => "Новости",
+        "PARENT_SECTION" => "",
+        "PARENT_SECTION_CODE" => "",
+        "PREVIEW_TRUNCATE_LEN" => "",
+        "PROPERTY_CODE" => array(
+            0 => "PROGRESS",
+            1 => "STYLE",
+            2 => "",
+        ),
+        "SET_BROWSER_TITLE" => "Y",
+        "SET_LAST_MODIFIED" => "N",
+        "SET_META_DESCRIPTION" => "Y",
+        "SET_META_KEYWORDS" => "Y",
+        "SET_STATUS_404" => "N",
+        "SET_TITLE" => "Y",
+        "SHOW_404" => "N",
+        "SORT_BY1" => "ACTIVE_FROM",
+        "SORT_BY2" => "SORT",
+        "SORT_ORDER1" => "DESC",
+        "SORT_ORDER2" => "ASC",
+        "STRICT_SECTION_CHECK" => "N",
+        "COMPONENT_TEMPLATE" => "feature_list"
+    ),
+    false
+);?>
  </section>
 <!--// ab --> <!-- /services --> <section class="services py-md-5 py-4" id="services">
 <div class="container">
