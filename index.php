@@ -212,39 +212,147 @@ $APPLICATION->SetTitle("Мебельная компания");
     );?>
  </section>
 <!-- //gallery --> <!--/stats--> <section class="stats py-lg-5 py-4" id="stats">
-<div class="gallery-inner container py-md-5 py-4">
-	<div class="row mt-lg-5 stats-con text-white">
-		<div class="col-sm-3 col-6 stats_info counter_grid">
- <i class="far fa-lightbulb"></i>
-			<p class="counter">
-				 645
-			</p>
-			<h4>Projects Done</h4>
-		</div>
-		<div class="col-sm-3 col-6 stats_info counter_grid1">
- <i class="far fa-heart"></i>
-			<p class="counter">
-				 563
-			</p>
-			<h4>Satisfied Clients</h4>
-		</div>
-		<div class="col-sm-3 col-6 stats_info counter_grid">
- <i class="fas fa-magic"></i>
-			<p class="counter">
-				 1145
-			</p>
-			<h4>Awards</h4>
-		</div>
-		<div class="col-sm-3 col-6 stats_info counter_grid2">
- <i class="far fa-smile"></i>
-			<p class="counter">
-				 1045
-			</p>
-			<h4>Happy Clients</h4>
-		</div>
-	</div>
-</div>
+
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:news.list",
+        "counter_list",
+        array(
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",
+            "ADD_SECTIONS_CHAIN" => "Y",
+            "AJAX_MODE" => "N",
+            "AJAX_OPTION_ADDITIONAL" => "",
+            "AJAX_OPTION_HISTORY" => "N",
+            "AJAX_OPTION_JUMP" => "N",
+            "AJAX_OPTION_STYLE" => "Y",
+            "CACHE_FILTER" => "N",
+            "CACHE_GROUPS" => "Y",
+            "CACHE_TIME" => "36000000",
+            "CACHE_TYPE" => "A",
+            "CHECK_DATES" => "Y",
+            "DETAIL_URL" => "",
+            "DISPLAY_BOTTOM_PAGER" => "Y",
+            "DISPLAY_DATE" => "Y",
+            "DISPLAY_NAME" => "Y",
+            "DISPLAY_PICTURE" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "DISPLAY_TOP_PAGER" => "N",
+            "FIELD_CODE" => array(
+                0 => "",
+                1 => "",
+            ),
+            "FILTER_NAME" => "",
+            "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+            "IBLOCK_ID" => "8",
+            "IBLOCK_TYPE" => "OLEE",
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+            "INCLUDE_SUBSECTIONS" => "Y",
+            "MESSAGE_404" => "",
+            "NEWS_COUNT" => "20",
+            "PAGER_BASE_LINK_ENABLE" => "N",
+            "PAGER_DESC_NUMBERING" => "N",
+            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+            "PAGER_SHOW_ALL" => "N",
+            "PAGER_SHOW_ALWAYS" => "N",
+            "PAGER_TEMPLATE" => ".default",
+            "PAGER_TITLE" => "Новости",
+            "PARENT_SECTION" => "",
+            "PARENT_SECTION_CODE" => "",
+            "PREVIEW_TRUNCATE_LEN" => "",
+            "PROPERTY_CODE" => array(
+                0 => "COUNT",
+                1 => "LABEL",
+                2 => "",
+            ),
+            "SET_BROWSER_TITLE" => "Y",
+            "SET_LAST_MODIFIED" => "N",
+            "SET_META_DESCRIPTION" => "Y",
+            "SET_META_KEYWORDS" => "Y",
+            "SET_STATUS_404" => "N",
+            "SET_TITLE" => "Y",
+            "SHOW_404" => "N",
+            "SORT_BY1" => "ACTIVE_FROM",
+            "SORT_BY2" => "SORT",
+            "SORT_ORDER1" => "DESC",
+            "SORT_ORDER2" => "ASC",
+            "STRICT_SECTION_CHECK" => "N",
+            "COMPONENT_TEMPLATE" => "counter_list"
+        ),
+        false
+    );?>
  </section>
+
+
+
+<?$APPLICATION->IncludeComponent(
+    "bitrix:news.list",
+    "comment_list",
+    array(
+        "ACTIVE_DATE_FORMAT" => "d.m.Y",
+        "ADD_SECTIONS_CHAIN" => "Y",
+        "AJAX_MODE" => "N",
+        "AJAX_OPTION_ADDITIONAL" => "",
+        "AJAX_OPTION_HISTORY" => "N",
+        "AJAX_OPTION_JUMP" => "N",
+        "AJAX_OPTION_STYLE" => "Y",
+        "CACHE_FILTER" => "N",
+        "CACHE_GROUPS" => "Y",
+        "CACHE_TIME" => "36000000",
+        "CACHE_TYPE" => "A",
+        "CHECK_DATES" => "Y",
+        "DETAIL_URL" => "",
+        "DISPLAY_BOTTOM_PAGER" => "Y",
+        "DISPLAY_DATE" => "Y",
+        "DISPLAY_NAME" => "Y",
+        "DISPLAY_PICTURE" => "Y",
+        "DISPLAY_PREVIEW_TEXT" => "Y",
+        "DISPLAY_TOP_PAGER" => "N",
+        "FIELD_CODE" => array(
+            0 => "",
+            1 => "",
+        ),
+        "FILTER_NAME" => "",
+        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+        "IBLOCK_ID" => "9",
+        "IBLOCK_TYPE" => "OLEE",
+        "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+        "INCLUDE_SUBSECTIONS" => "Y",
+        "MESSAGE_404" => "",
+        "NEWS_COUNT" => "20",
+        "PAGER_BASE_LINK_ENABLE" => "N",
+        "PAGER_DESC_NUMBERING" => "N",
+        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+        "PAGER_SHOW_ALL" => "N",
+        "PAGER_SHOW_ALWAYS" => "N",
+        "PAGER_TEMPLATE" => ".default",
+        "PAGER_TITLE" => "Новости",
+        "PARENT_SECTION" => "",
+        "PARENT_SECTION_CODE" => "",
+        "PREVIEW_TRUNCATE_LEN" => "",
+        "PROPERTY_CODE" => array(
+            0 => "AVTOR",
+            1 => "AVTOR_STATE",
+            2 => "",
+            3 => "",
+            4 => "",
+        ),
+        "SET_BROWSER_TITLE" => "Y",
+        "SET_LAST_MODIFIED" => "N",
+        "SET_META_DESCRIPTION" => "Y",
+        "SET_META_KEYWORDS" => "Y",
+        "SET_STATUS_404" => "N",
+        "SET_TITLE" => "Y",
+        "SHOW_404" => "N",
+        "SORT_BY1" => "ACTIVE_FROM",
+        "SORT_BY2" => "SORT",
+        "SORT_ORDER1" => "DESC",
+        "SORT_ORDER2" => "ASC",
+        "STRICT_SECTION_CHECK" => "N",
+        "COMPONENT_TEMPLATE" => "comment_list"
+    ),
+    false
+);?>
+
+
 <!--//stats--> <!-- /testimonials -->
 <div class="testimonials py-lg-5 py-4" id="clients">
 	<div class="testimonials-inner container py-lg-4 py-3">
@@ -293,6 +401,11 @@ $APPLICATION->SetTitle("Мебельная компания");
 		</div>
 	</div>
 </div>
+
+
+
+
+
  <!-- //testimonials --> <!-- /Contact--> <section class="contact py-lg-5 py-md-5 py-3" id="contact">
 <div class="container">
 	<div class="inner-sec-w3ls py-lg-5 py-3">
