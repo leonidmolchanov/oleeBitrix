@@ -7,54 +7,25 @@ use Bitrix\Main\Page\Asset;
     <div class="container py-4 py-sm-5">
 
         <div class="row py-sm-4 py-3">
-            <div class="col-lg-2 col-md-4">
-                <ul class="list-footer" data-aos="fade-up">
-                    <li>
-                        <a href="#home" class="nav-link scroll">
-                            Home
-                        </a>
-                    </li>
-                    <li class="my-2">
-                        <a href="#about" class="nav-link scroll">
-                            About
-                        </a>
-                    </li>
-                    <li class="my-2">
-                        <a href="#services" class="nav-link scroll">
-                            Services
-                        </a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#projects" class="nav-link scroll">
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link scroll">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 mt-sm-5">
-                <ul class="list-footer" data-aos="fade-up">
-                    <li>
-                        <a href="#register" data-toggle="modal" data-target="#exampleModalCenter" class="nav-link scroll">
-                            Login
-                        </a>
-                    </li>
-                    <li class="my-2">
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter2" class="nav-link">
-                            Register
-                        </a>
-                    </li>
-                    <li class="my-2">
-                        <a href="#" class="nav-link">
-                            License
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
+
+
+            <?$APPLICATION->IncludeComponent("bitrix:menu", "bottom_menu", Array(
+                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+                "CHILD_MENU_TYPE" => "top",	// Тип меню для остальных уровней
+                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                "MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                "MENU_CACHE_TYPE" => "N",	// Тип кеширования
+                "MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+                "ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+                "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                "COMPONENT_TEMPLATE" => "horizontal_multilevel"
+            ),
+                false
+            );?>
+
             <div class="offset-lg-4"></div>
             <div class="col-lg-4 footer-end-grid mt-md-0 mt-sm-5" data-aos="fade-up">
                 <h2>
