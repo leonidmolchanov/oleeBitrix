@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="olee" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="olee">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/bitrix/www" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/home/bitrix/www/bitrix" />
+            <excludedPath path="/home/bitrix/www/company" />
+            <excludedPath path="/home/bitrix/www/contacts" />
+            <excludedPath path="/home/bitrix/www/include" />
+            <excludedPath path="/home/bitrix/www/images" />
+            <excludedPath path="/home/bitrix/www/login" />
+            <excludedPath path="/home/bitrix/www/news" />
+            <excludedPath path="/home/bitrix/www/products" />
+            <excludedPath path="/home/bitrix/www/search" />
+            <excludedPath path="/home/bitrix/www/services" />
+            <excludedPath path="/home/bitrix/www/upload" />
+            <excludedPath local="true" path="$PROJECT_DIR$/bitrix" />
+            <excludedPath local="true" path="$PROJECT_DIR$/company" />
+            <excludedPath local="true" path="$PROJECT_DIR$/contacts" />
+            <excludedPath local="true" path="$PROJECT_DIR$/include" />
+            <excludedPath local="true" path="$PROJECT_DIR$/images" />
+            <excludedPath local="true" path="$PROJECT_DIR$/login" />
+            <excludedPath local="true" path="$PROJECT_DIR$/news" />
+            <excludedPath local="true" path="$PROJECT_DIR$/products" />
+            <excludedPath local="true" path="$PROJECT_DIR$/search" />
+            <excludedPath local="true" path="$PROJECT_DIR$/services" />
+            <excludedPath local="true" path="$PROJECT_DIR$/upload" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
