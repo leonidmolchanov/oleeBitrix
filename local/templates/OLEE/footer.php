@@ -83,7 +83,18 @@ use Bitrix\Main\Page\Asset;
                 </button>
             </div>
             <div class="modal-body">
-
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:system.auth.form",
+                    "auth",
+                    array(
+                        "COMPONENT_TEMPLATE" => "auth",
+                        "REGISTER_URL" => "",
+                        "FORGOT_PASSWORD_URL" => "",
+                        "PROFILE_URL" => "",
+                        "SHOW_ERRORS" => "N"
+                    ),
+                    false
+                );?>
                 <div class="login px-4 mx-auto mw-100">
                     <h5 class="text-center mb-4">Login Now</h5>
                     <form action="#" method="post">

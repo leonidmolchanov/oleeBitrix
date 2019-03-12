@@ -6,7 +6,7 @@ use Bitrix\Main\Page\Asset;
 <html lang="zxx">
 
 <head>
-    <title>Recognize Personal Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <title><?$APPLICATION->ShowTitle();?></title>
     <!-- Meta tag Keywords -->
     <?$APPLICATION->ShowHead();?>
 
